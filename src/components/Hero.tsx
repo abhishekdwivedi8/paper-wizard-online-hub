@@ -23,10 +23,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: '0.2s' }}>
-            <img 
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1770"
-              alt="Business, technology, and medicine professionals collaborating"
-              className="w-full h-auto rounded-lg shadow-xl"
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+              alt="Bright, diverse group collaborating across medicine, technology, and business"
+              className="w-full h-auto rounded-lg shadow-xl hover-scale"
             />
           </div>
         </div>
