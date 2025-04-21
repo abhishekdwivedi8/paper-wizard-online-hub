@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: '0.2s' }}>
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=1770" 
-              alt="Research papers and academic writing" 
+              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=1770" 
+              alt="Professional writing and research" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
           </div>
@@ -36,3 +36,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
