@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: "0.2s" }}>
             <img
-              src="https://i.ibb.co/9nKg5GJ/education-logos-collage.png"
-              alt="Collage of logos representing renowned educational institutions from India and worldwide across various fields of study"
+              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
+              alt="A group of college graduates smiling and holding their degrees"
               className="w-full h-auto rounded-lg shadow-xl hover-scale"
             />
           </div>
