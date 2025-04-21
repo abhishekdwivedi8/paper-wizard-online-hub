@@ -13,7 +13,8 @@ import {
 const pricingPlans = [
   {
     name: "Basic",
-    price: "$12",
+    priceInr: "₹99",
+    priceUsd: "$12",
     unit: "per page",
     description: "For standard research papers and essays",
     features: [
@@ -27,7 +28,8 @@ const pricingPlans = [
   },
   {
     name: "Premium",
-    price: "$20",
+    priceInr: "₹200",
+    priceUsd: "$20",
     unit: "per page",
     description: "For in-depth academic papers",
     features: [
@@ -42,7 +44,8 @@ const pricingPlans = [
   },
   {
     name: "Professional",
-    price: "$35",
+    priceInr: "₹500",
+    priceUsd: "$35",
     unit: "per page",
     description: "For complex professional documents",
     features: [
@@ -69,7 +72,6 @@ const Pricing = () => {
             All prices include thorough research and original writing.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingPlans.map((plan, index) => (
             <Card
@@ -88,9 +90,14 @@ const Pricing = () => {
               )}
               <CardHeader className="text-center pt-8">
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                <div className="mt-4 mb-2">
-                  <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-gray-500 ml-2">{plan.unit}</span>
+                <div className="mt-4 mb-2 flex flex-col items-center space-y-1">
+                  <div>
+                    <span className="text-3xl font-bold">{plan.priceInr}</span>
+                    <span className="text-gray-500 ml-2">{plan.unit}</span>
+                  </div>
+                  <div>
+                    <span className="text-lg text-gray-600">{plan.priceUsd} <span className="text-xs">({plan.unit})</span></span>
+                  </div>
                 </div>
                 <CardDescription className="text-base">
                   {plan.description}
@@ -120,7 +127,6 @@ const Pricing = () => {
             </Card>
           ))}
         </div>
-
         <div className="mt-16 text-center fade-in">
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Need a custom quote for a larger project? 
