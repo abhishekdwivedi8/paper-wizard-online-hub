@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: '0.2s' }}>
             <img
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
-              alt="Bright, diverse group collaborating across medicine, technology, and business"
+              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1200&q=80"
+              alt="Diverse group standing around multiple digital video screens representing various educational fields including medicine, technology and business"
               className="w-full h-auto rounded-lg shadow-xl hover-scale"
             />
           </div>
@@ -36,4 +36,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
