@@ -13,7 +13,7 @@ import {
 const pricingPlans = [
   {
     name: "Basic",
-    priceInr: "₹99",
+    priceInr: "₹69 - ₹99",
     priceUsd: "$5 - $10",
     unit: "per page",
     description: "For standard research papers and essays",
@@ -141,4 +141,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-
