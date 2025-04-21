@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: "0.2s" }}>
             <img
-              src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
-              alt="A group of college graduates smiling and holding their degrees"
+              src="/lovable-uploads/5787e52a-12bf-44f2-a7ed-10e4aec7473b.png"
+              alt="Two professionals smiling and holding their graduation degrees"
               className="w-full h-auto rounded-lg shadow-xl hover-scale"
             />
           </div>
