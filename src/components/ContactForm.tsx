@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -24,7 +24,9 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -56,7 +58,8 @@ const ContactForm = () => {
         <div className="text-center mb-16 fade-in">
           <h2 className="mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have a research project in mind? Contact us for a free consultation and quote.
+            Have a research project in mind? Contact us for a free consultation
+            and quote.
           </p>
         </div>
 
@@ -97,13 +100,14 @@ const ContactForm = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="phone" className="font-medium">
-                    Phone Number (Optional)
+                    Phone Number
                   </label>
                   <Input
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                     placeholder="(123) 456-7890"
                   />
                 </div>
@@ -162,7 +166,7 @@ const ContactForm = () => {
             </form>
           </div>
 
-          <div className="fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -201,7 +205,8 @@ const ContactForm = () => {
               </div>
               <div className="mt-6 pt-6 border-t">
                 <p className="text-gray-700">
-                  We aim to respond to all inquiries within 24 hours. For urgent requests, please call our customer service line.
+                  We aim to respond to all inquiries within 24 hours. For urgent
+                  requests, please call our customer service line.
                 </p>
               </div>
             </div>
@@ -213,3 +218,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
