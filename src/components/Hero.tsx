@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: '0.2s' }}>
             <img 
-              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=1770" 
-              alt="Professional writing and research" 
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1770"
+              alt="Business, technology, and medicine professionals collaborating"
               className="w-full h-auto rounded-lg shadow-xl"
             />
           </div>
