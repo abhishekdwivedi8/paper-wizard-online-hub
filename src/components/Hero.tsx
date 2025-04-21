@@ -24,8 +24,8 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 fade-in" style={{ animationDelay: "0.2s" }}>
             <img
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
-              alt="Collage concept: books, digital screens, scientific instruments, world landmarks, and symbolic logos representing renowned institutions and all educational fields"
+              src="https://i.ibb.co/9nKg5GJ/education-logos-collage.png"
+              alt="Collage of logos representing renowned educational institutions from India and worldwide across various fields of study"
               className="w-full h-auto rounded-lg shadow-xl hover-scale"
             />
           </div>
