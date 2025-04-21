@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -27,7 +26,7 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Custom Research Papers (collapsible/accordion style) */}
+          {/* Custom Research Papers (accordion/collapsible) */}
           <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0s` }}>
             <AccordionItem value="custom-research-papers">
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
@@ -65,7 +64,7 @@ const Services = () => {
             </AccordionItem>
           </Accordion>
 
-          {/* In-depth Literature Reviews (collapsible/accordion style) */}
+          {/* In-depth Literature Reviews (accordion/collapsible) */}
           <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0.1s` }}>
             <AccordionItem value="literature-reviews">
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
@@ -103,18 +102,44 @@ const Services = () => {
             </AccordionItem>
           </Accordion>
 
-          {/* Academic & Professional Writing (static card) */}
-          <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `0.2s` }}>
-            <CardHeader className="text-center pt-8">
-              <div className="mx-auto mb-4"><BookOpen className="h-12 w-12 text-primary" /></div>
-              <CardTitle className="text-2xl">Academic & Professional Writing</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <CardDescription className="text-base">
-                High-quality writing for theses, dissertations, journal articles, and professional documents.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          {/* Academic & Professional Writing (accordion/collapsible) */}
+          <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0.2s` }}>
+            <AccordionItem value="academic-professional-writing">
+              <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="w-full px-0 py-0 border-none bg-transparent text-left flex-col items-center">
+                  <CardHeader className="text-center pt-8 w-full">
+                    <div className="mx-auto mb-4"><BookOpen className="h-12 w-12 text-primary" /></div>
+                    <CardTitle className="text-2xl">Academic & Professional Writing</CardTitle>
+                  </CardHeader>
+                  <CardContent className="w-full text-center">
+                    <CardDescription className="text-base">
+                      High-quality writing for theses, dissertations, journal articles, and professional documents.
+                    </CardDescription>
+                  </CardContent>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="px-6 pb-6 text-gray-700 text-left">
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">Expert Writing:</span> Our writers excel in producing well-structured, persuasive, and technically sound documents for both academic and professional audiences.
+                    </p>
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">Diverse Services:</span> Whether you need a thesis, dissertation, journal article, grant proposal, or technical report, our team has the experience to deliver high-quality results.
+                    </p>
+                    <ul className="list-disc pl-6 mb-2">
+                      <li>Thesis and dissertation drafting</li>
+                      <li>Professional white papers and reports</li>
+                      <li>Journal and conference paper preparation</li>
+                      <li>Business and technical documentation</li>
+                      <li>Editing and proofreading</li>
+                    </ul>
+                    <p>
+                      Rely on us to produce impactful, polished documents that help you achieve your academic or career objectives.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </Card>
+            </AccordionItem>
+          </Accordion>
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -168,4 +193,3 @@ const Services = () => {
 };
 
 export default Services;
-
