@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -5,29 +6,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 import { BookOpen, FileText, Search } from "lucide-react";
-
-const services = [
-  {
-    icon: <FileText className="h-12 w-12 text-primary" />,
-    title: "Custom Research Papers",
-    description:
-      "Original, well-researched papers tailored to your specific requirements and academic standards.",
-  },
-  {
-    icon: <Search className="h-12 w-12 text-primary" />,
-    title: "In-depth Literature Reviews",
-    description:
-      "Comprehensive analysis of existing research, identifying gaps and trends in your field of study.",
-  },
-  {
-    icon: <BookOpen className="h-12 w-12 text-primary" />,
-    title: "Academic & Professional Writing",
-    description:
-      "High-quality writing for theses, dissertations, journal articles, and professional documents.",
-  },
-];
 
 const Services = () => {
   return (
@@ -80,18 +65,45 @@ const Services = () => {
             </AccordionItem>
           </Accordion>
 
-          {/* Other Services */}
-          <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `0.1s` }}>
-            <CardHeader className="text-center pt-8">
-              <div className="mx-auto mb-4"><Search className="h-12 w-12 text-primary" /></div>
-              <CardTitle className="text-2xl">In-depth Literature Reviews</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <CardDescription className="text-base">
-                Comprehensive analysis of existing research, identifying gaps and trends in your field of study.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          {/* In-depth Literature Reviews (collapsible/accordion style) */}
+          <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0.1s` }}>
+            <AccordionItem value="literature-reviews">
+              <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="w-full px-0 py-0 border-none bg-transparent text-left flex-col items-center">
+                  <CardHeader className="text-center pt-8 w-full">
+                    <div className="mx-auto mb-4"><Search className="h-12 w-12 text-primary" /></div>
+                    <CardTitle className="text-2xl">In-depth Literature Reviews</CardTitle>
+                  </CardHeader>
+                  <CardContent className="w-full text-center">
+                    <CardDescription className="text-base">
+                      Comprehensive analysis of existing research, identifying gaps and trends in your field of study.
+                    </CardDescription>
+                  </CardContent>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="px-6 pb-6 text-gray-700 text-left">
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">Comprehensive Coverage:</span> Our literature reviews critically evaluate existing research, synthesizing diverse sources to provide you with a thorough understanding of your subject.
+                    </p>
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">Critical Analysis:</span> We not only summarize available literature but also identify gaps, contradictions, and trends in the current body of knowledge.
+                    </p>
+                    <ul className="list-disc pl-6 mb-2">
+                      <li>Identification of research gaps for new insights</li>
+                      <li>Analysis of methodologies and theoretical frameworks</li>
+                      <li>Annotated bibliographies upon request</li>
+                      <li>Structured synthesis tailored to your goals</li>
+                    </ul>
+                    <p>
+                      Let us lay the foundation for your research project with a high-impact literature review that demonstrates depth, rigor, and clarity.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </Card>
+            </AccordionItem>
+          </Accordion>
+
+          {/* Academic & Professional Writing (static card) */}
           <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `0.2s` }}>
             <CardHeader className="text-center pt-8">
               <div className="mx-auto mb-4"><BookOpen className="h-12 w-12 text-primary" /></div>
@@ -156,3 +168,4 @@ const Services = () => {
 };
 
 export default Services;
+
