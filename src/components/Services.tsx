@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -6,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { BookOpen, FileText, Search } from "lucide-react";
 
 const services = [
@@ -42,17 +42,67 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `${0.1 * index}s` }}>
-              <CardHeader className="text-center pt-8">
-                <div className="mx-auto mb-4">{service.icon}</div>
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-base">{service.description}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+          {/* Custom Research Papers (collapsible/accordion style) */}
+          <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0s` }}>
+            <AccordionItem value="custom-research-papers">
+              <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="w-full px-0 py-0 border-none bg-transparent text-left flex-col items-center">
+                  <CardHeader className="text-center pt-8 w-full">
+                    <div className="mx-auto mb-4"><FileText className="h-12 w-12 text-primary" /></div>
+                    <CardTitle className="text-2xl">Custom Research Papers</CardTitle>
+                  </CardHeader>
+                  <CardContent className="w-full text-center">
+                    <CardDescription className="text-base">
+                      Original, well-researched papers tailored to your specific requirements and academic standards.
+                    </CardDescription>
+                  </CardContent>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="px-6 pb-6 text-gray-700 text-left">
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">In-Depth Knowledge:</span> Our team of experts dives deep into your chosen topic, delivering research papers with thorough analysis, credible sources, and original insights.
+                    </p>
+                    <p className="mb-2">
+                      <span className="font-semibold text-primary">Tailored to You:</span> We work closely with you to understand your requirements, ensuring every paper is unique and meets your academic or professional goals.
+                    </p>
+                    <ul className="list-disc pl-6 mb-2">
+                      <li>Custom research design and methodology</li>
+                      <li>Comprehensive literature reviews</li>
+                      <li>Data analysis & interpretation</li>
+                      <li>Full referencing & compliance with formatting standards</li>
+                    </ul>
+                    <p>
+                      Whether you need undergraduate, postgraduate, or doctoral-level work, we deliver unmatched quality and academic integrity—on time, every time.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </Card>
+            </AccordionItem>
+          </Accordion>
+
+          {/* Other Services */}
+          <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `0.1s` }}>
+            <CardHeader className="text-center pt-8">
+              <div className="mx-auto mb-4"><Search className="h-12 w-12 text-primary" /></div>
+              <CardTitle className="text-2xl">In-depth Literature Reviews</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <CardDescription className="text-base">
+                Comprehensive analysis of existing research, identifying gaps and trends in your field of study.
+              </CardDescription>
+            </CardContent>
+          </Card>
+          <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300 fade-in" style={{ animationDelay: `0.2s` }}>
+            <CardHeader className="text-center pt-8">
+              <div className="mx-auto mb-4"><BookOpen className="h-12 w-12 text-primary" /></div>
+              <CardTitle className="text-2xl">Academic & Professional Writing</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <CardDescription className="text-base">
+                High-quality writing for theses, dissertations, journal articles, and professional documents.
+              </CardDescription>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
