@@ -14,7 +14,7 @@ const pricingPlans = [
   {
     name: "Basic",
     priceInr: "₹99",
-    priceUsd: "$12",
+    priceUsd: "$5 - $10",
     unit: "per page",
     description: "For standard research papers and essays",
     features: [
@@ -141,3 +141,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
