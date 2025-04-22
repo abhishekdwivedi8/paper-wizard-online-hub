@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { toast } = useToast();
@@ -81,24 +81,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/academic-integrity" className="text-gray-300 hover:text-white transition-colors">
                   Academic Integrity
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/refund-policy" className="text-gray-300 hover:text-white transition-colors">
                   Refund Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
