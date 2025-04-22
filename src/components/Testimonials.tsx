@@ -1,20 +1,19 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
     quote: "The research paper I received was exceptional. It was thoroughly researched, well-structured, and delivered ahead of schedule. My professor was impressed with the quality of work.",
-    author: "James K.",
+    author: "Gaurav Deshmukh",
     title: "PhD Student",
   },
   {
     quote: "As a busy professional pursuing my MBA, I needed help with research for my capstone project. The team delivered an outstanding paper that helped me secure an A grade.",
-    author: "Maria L.",
+    author: "Subrahmanyam Aiyar",
     title: "Business Professional",
   },
   {
     quote: "I've used ResearchPro for multiple papers throughout my graduate studies. Their consistency and attention to detail have been impressive. I highly recommend their services.",
-    author: "David T.",
+    author: "Rishabh Pandey",
     title: "Graduate Student",
   },
   {
