@@ -1,14 +1,15 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { User } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dr. Emily Chen",
+    name: "Dr. Priya Sharma",
     role: "Research Director",
     bio: "Ph.D. in Literature with 15+ years of academic writing experience. Specializes in humanities and social sciences research.",
   },
   {
-    name: "Prof. Michael Johnson",
+    name: "Prof. Rajesh Kumar",
     role: "Senior Writer",
     bio: "Former university professor with expertise in scientific research papers, technical writing, and methodology development.",
   },
@@ -16,7 +17,7 @@ const teamMembers = [
     name: "Sarah Williams",
     role: "Content Specialist",
     bio: "Master's in English with a background in academic publishing. Expert in formatting, citations, and academic style guides.",
-  },
+  }
 ];
 
 const About = () => {
