@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Card,
   CardContent,
@@ -26,7 +27,6 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Custom Research Papers (accordion/collapsible) */}
           <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0s` }}>
             <AccordionItem value="custom-research-papers">
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
@@ -64,7 +64,6 @@ const Services = () => {
             </AccordionItem>
           </Accordion>
 
-          {/* In-depth Literature Reviews (accordion/collapsible) */}
           <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0.1s` }}>
             <AccordionItem value="literature-reviews">
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
@@ -102,7 +101,6 @@ const Services = () => {
             </AccordionItem>
           </Accordion>
 
-          {/* Academic & Professional Writing (accordion/collapsible) */}
           <Accordion type="single" collapsible className="fade-in" style={{ animationDelay: `0.2s` }}>
             <AccordionItem value="academic-professional-writing">
               <Card className="border-2 hover:border-primary hover:shadow-lg transition-all duration-300">
@@ -152,6 +150,7 @@ const Services = () => {
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-primary">✓</span>
+                <span>Research methodology guidance</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-primary">✓</span>
