@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
@@ -109,9 +110,9 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} ResearchPro. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
-            <a href="mailto:info@researchpro.com" className="flex items-center text-gray-300 hover:text-white transition-colors">
+            <a href="mailto:researchpro.contact@gmail.com" className="flex items-center text-gray-300 hover:text-white transition-colors">
               <Mail className="h-4 w-4 mr-2" />
-              info@researchpro.com
+              researchpro.contact@gmail.com
             </a>
           </div>
         </div>
