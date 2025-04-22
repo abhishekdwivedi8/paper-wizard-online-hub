@@ -152,11 +152,10 @@ const Services = () => {
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-primary">✓</span>
-                <span>Thesis and dissertation assistance</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-primary">✓</span>
-                <span>Research methodology guidance</span>
+                <span>Thesis and dissertation assistance and writing</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 text-primary">✓</span>
