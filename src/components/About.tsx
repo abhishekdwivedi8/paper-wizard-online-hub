@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { User } from "lucide-react";
 
@@ -43,13 +42,13 @@ const About = () => {
           <div className="space-y-6 fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-3xl font-semibold">Our Story</h3>
             <p className="text-lg text-gray-700">
-              Founded in 2015, ResearchPro was established by a group of academic professionals who recognized the need for quality research assistance in an increasingly demanding educational environment.
+              Founded in 2021, ResearchPro was established by a group of academic professionals who recognized the need for quality research assistance in an increasingly demanding educational environment.
             </p>
             <p className="text-lg text-gray-700">
               Our mission is to help students and professionals achieve their academic and career goals by providing meticulously researched, well-written papers that meet the highest standards of quality and originality.
             </p>
             <p className="text-lg text-gray-700">
-              With a team of over 50 writers holding advanced degrees across various disciplines, we've successfully completed more than 10,000 research papers for clients worldwide.
+              With a team of over 20 writers holding advanced degrees across various disciplines, we've successfully completed more than 2,000 research papers for clients worldwide.
             </p>
           </div>
         </div>
