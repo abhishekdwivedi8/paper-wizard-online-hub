@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -36,11 +37,29 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
+    // Construct mailto link
+    const mailtoLink = `mailto:subhamjrc@gmail.com?subject=${encodeURIComponent(`ResearchPro Inquiry: ${formData.subject}`)}
+&body=${encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Paper Type: ${formData.paperType}
+
+Message:
+${formData.message}
+`)}`;
+
+    // Open default email client
+    window.location.href = mailtoLink;
+
+    // Show toast notification
     toast({
-      title: "Form Submitted!",
-      description: "We'll get back to you as soon as possible.",
+      title: "Email Opened",
+      description: "Your default email client has been opened. Please send the email.",
     });
+
+    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -217,3 +236,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
