@@ -21,6 +21,7 @@ const ContactForm = () => {
     subject: "",
     paperType: "",
     message: "",
+    referredBy: "",
   });
 
   const handleChange = (
@@ -43,6 +44,7 @@ Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
 Paper Type: ${formData.paperType}
+Referred By: ${formData.referredBy || 'Not specified'}
 
 Message:
 ${formData.message}
@@ -62,6 +64,7 @@ ${formData.message}
       subject: "",
       paperType: "",
       message: "",
+      referredBy: "",
     });
   };
 
@@ -170,6 +173,19 @@ ${formData.message}
                   required
                   placeholder="Please describe your project requirements, deadline, and any other relevant details..."
                   rows={5}
+                />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="referredBy" className="font-medium">
+                  Referred By (Optional)
+                </label>
+                <Input
+                  id="referredBy"
+                  name="referredBy"
+                  value={formData.referredBy}
+                  onChange={handleChange}
+                  placeholder="Name of person or source who referred you"
                 />
               </div>
 
