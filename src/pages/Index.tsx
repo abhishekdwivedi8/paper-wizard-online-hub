@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import { WhatsAppBadge } from "@/components/WhatsAppBadge";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Testimonials />
       <ContactForm />
       <Footer />
+      <WhatsAppBadge />
     </div>
   );
 };
